@@ -1,0 +1,21 @@
+{
+  "name": "backend_techno",
+  "version": "1.0.0",
+  "description": "Backend para o site Techno feito no curso da Origamid",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsnd --transpile-only --ignore-watch node_modules --respawn ./server.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.17.8",
+    "@types/pg": "^7.14.5",
+    "@types/uuid": "^8.3.0",
+    "express": "^4.17.1",
+    "pg": "^8.4.2",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.0.5",
+    "uuid": "^8.3.1"
+  }
+}
