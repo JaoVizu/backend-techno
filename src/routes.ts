@@ -21,7 +21,7 @@ routes.get('/produtos', (req, res) => {
 })
 
 routes.get('/produtos/:uuid', (req, res) => {
-  const id = req.param('uuid')
+  const id = req.params.uuid
   async function selectProduct(){
     const client = await pool.connect()
     try{
@@ -34,7 +34,7 @@ routes.get('/produtos/:uuid', (req, res) => {
     }
   }
 
-  selectProduct().then(data => res.json(data))
+  selectProduct().then((data) => res.json(data))
 })
 
 routes.post('/produtos', (req, res) => {
